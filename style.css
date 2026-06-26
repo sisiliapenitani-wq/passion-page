@@ -37,7 +37,7 @@ body {
    ============================================================= */
 .hero {
     background-image: url('images/horizontal.jpg');
-    height: 3vh;
+    height: 32vh;
     background-size: cover;
     background-position: middle;
     display: flex;
