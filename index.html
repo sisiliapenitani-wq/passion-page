@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- ✏️ CHANGE THIS: Update the title to match your passion topic -->
+    <title>My Intrest Page</title>
+</head>
+
+<body>
+
+    <!-- =====================================================================
+         HERO SECTION
+         This is the big banner at the top of your page.
+         ✏️ CHANGE: Replace the text between the tags with your page title.
+         ✏️ CHANGE: You can also swap the background image in style.css.
+         ===================================================================== -->
+    <section class="hero">
+        <div class="hero-text">Brooklyn Nine-Nine</div>
+    </section>
+
+
+    <!-- =====================================================================
+         INTRO SECTION
+         A short paragraph introducing your topic to your audience.
+         ✏️ CHANGE: Replace ALL the placeholder text below with your own words.
+         ===================================================================== -->
+    <section class="intro">
+        <h2>Welcome to my page about Brooklyn Nine-Nine!</h2>
+        <p>
+            Brooklyn Nine-Nine is a police sitcom and a workplace comedy. It follows the humorous and heartwarming day to day lives of a talented but immature detective and his squad. I have chosen this topic because Broolyn Nine-Nine is a show that I enjoy watching if I ever get bored and it never fails to make me laugh.
+        </p>
+    </section>
+
+
+    <!-- =====================================================================
+         MAIN CONTENT SECTION
+         Three cards with images and captions about your topic.
+         ✏️ CHANGE: Replace the placeholder images with your own (put them in the images/ folder).
+         ✏️ CHANGE: Replace the alt text and captions with something meaningful.
+         ===================================================================== -->
+    <section class="topic">
+        <div class="topic-title">
+            <h1>Random photos</h1>
+        </div>
+
+        <div class="topic-content">
+
+            <!-- Card 1 -->
+            <div class="topic-card">
+                <img src="images/cagney.jpg" alt="Describe your image here">
+                <h2 class="topic-card-text">Jake Peralta with Terry's daughters (in show).</h2>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="topic-card">
+                <img src="images/blah.jpg" alt="Describe your image here">
+                <h2 class="topic-card-text">Andy Samberg, Joe Lo Trugilo and Stephanie Beatriz in character.</h2>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="topic-card">
+                <img src="images/ninenine.jpg" alt="Describe your image here">
+                <h2 class="topic-card-text">The whole squad together in a photo.</h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         HIDDEN "DID YOU KNOW?" SECTION — JAVASCRIPT REVEAL
+         This section is hidden when the page loads.
+         When the user clicks the button, JavaScript shows the hidden content.
+         ✏️ CHANGE: Replace the fact text with an interesting fact about your topic.
+         ✏️ DO NOT DELETE: Keep the id="hidden-fact" and id="reveal-btn" as they are —
+             the JavaScript below needs these exact names to work.
+         ===================================================================== -->
+    <section class="fact-section">
+        <div class="topic-title">
+            <h1>Did You Know?</h1>
+        </div>
+
+        <div class="fact-container">
+            <button id="reveal-btn" onclick="revealFact()">Click to reveal a fact!</button>
+
+            <!-- This div is hidden until the button is clicked -->
+            <div id="hidden-fact" class="hidden">
+                <p>
+                    Terry Crews once had to work as a local news sketch artist in real life after the regular artist called in sick. The show used this exact true story for his character in an early episode.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================================
+         FOOTER
+         ✏️ CHANGE: Replace "Student Name" with your actual name.
+         ✏️ CHANGE: Update the year if needed.
+         ===================================================================== -->
+    <footer class="footer">
+        <p>&copy; 2026 My Passion Page — By Sisilia Penitani</p>
+    </footer>
+
+
+    <!-- =====================================================================
+         JAVASCRIPT
+         This script makes the hidden fact section appear when the button is clicked.
+         ⚠️  DO NOT EDIT this section unless you know what you are doing.
+         ===================================================================== -->
+    <script>
+        function revealFact() {
+            // Find the hidden section and the button
+            var fact = document.getElementById("hidden-fact");
+            var btn = document.getElementById("reveal-btn");
+
+            // Show the hidden section
+            fact.classList.remove("hidden");
+            fact.classList.add("visible");
+
+            // Change the button text so the user knows it worked
+            btn.textContent = "There it is!";
+            btn.disabled = true;
+        }
+    </script>
+
+</body>
+</html>

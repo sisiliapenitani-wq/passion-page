@@ -1,0 +1,195 @@
+/* =============================================================
+   MY PASSION PAGE — style.css
+   
+   This file controls how your page LOOKS.
+   Find the ✏️ comments to know what you can change.
+   ============================================================= */
+
+
+/* --- RESET: Don't change this --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* =============================================================
+   FONT
+   ✏️ CHANGE: Swap "Arial" for any web-safe font you prefer.
+   Options: Georgia, Verdana, Trebuchet MS, Times New Roman
+   ============================================================= */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =============================================================
+   HERO SECTION (the big banner at the top)
+   ✏️ CHANGE: Swap the background-image URL for your own image.
+   ✏️ CHANGE: Try a solid background-color instead of an image:
+       background-color: #3a0066;
+   ============================================================= */
+.hero {
+    background-image: url('images/horizontal.jpg');
+    height: 3vh;
+    background-size: cover;
+    background-position: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9da00;
+    text-align: center;
+    position: relative;
+}
+
+/* ✏️ CHANGE: Make the hero text bigger or smaller (try 2em–6em) */
+.hero-text {
+    font-size: 4em;
+    font-weight: bold;
+    /* ✏️ CHANGE: Add a text shadow so text is easier to read over images */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+/* =============================================================
+   INTRO SECTION
+   ✏️ CHANGE: Adjust padding, font-size, or text-align
+   ============================================================= */
+.intro {
+    width: 70%;
+    margin: 2em auto;
+    font-size: 1.1em;
+    line-height: 1.7;
+    /* ✏️ CHANGE: Try color: #333333; for dark grey text */
+    color: #222222;
+}
+
+.intro h2 {
+    /* ✏️ CHANGE: Swap this colour for your own hex colour */
+    color: #000000;
+}
+
+
+/* =============================================================
+   SECTION TITLE BAR (the dark banner with section headings)
+   ✏️ CHANGE: Swap background-color for your own colour
+   ============================================================= */
+.topic-title {
+    color: white;
+    font-size: 2em;
+    padding: 0.1em 3em;
+    /* ✏️ CHANGE: Try a different colour here — use a hex code */
+    background-color: rgb(6, 1, 32);
+}
+
+
+/* =============================================================
+   THREE-COLUMN CARD GRID
+   ✏️ CHANGE: Adjust gap to add more/less space between cards
+   ============================================================= */
+.topic-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    width: 70%;
+    margin: 3em auto;
+}
+
+
+/* =============================================================
+   INDIVIDUAL CARDS
+   ✏️ CHANGE: background-color, border-radius, box-shadow
+   ============================================================= */
+.topic-card {
+    /* ✏️ CHANGE: Swap this colour */
+    background-color: rgb(235, 233, 206);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topic-card-text {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+
+/* =============================================================
+   DID YOU KNOW? SECTION
+   ✏️ CHANGE: background-color and text-align
+   ============================================================= */
+.fact-section {
+    margin-top: 2em;
+}
+
+.fact-container {
+    width: 70%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+/* The reveal button */
+#reveal-btn {
+    /* ✏️ CHANGE: background-color to match your colour scheme */
+    background-color: #3a0066;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.1em;
+    border-radius: 0.4em;
+    cursor: pointer;
+    /* Smooth colour change on hover */
+    transition: background-color 0.2s;
+}
+
+/* What the button looks like when you hover over it */
+#reveal-btn:hover {
+    /* ✏️ CHANGE: A slightly lighter shade of your button colour */
+    background-color: #6a00aa;
+}
+
+/* What the button looks like after it has been clicked (disabled) */
+#reveal-btn:disabled {
+    background-color: #888888;
+    cursor: default;
+}
+
+/* The hidden fact box — starts invisible */
+.hidden {
+    display: none;
+}
+
+/* The fact box after it becomes visible */
+.visible {
+    display: block;
+    margin-top: 1.5em;
+    padding: 1.5em;
+    /* ✏️ CHANGE: background-color for the revealed fact box */
+    background-color: #f3e8ff;
+    border-left: 5px solid #3a0066;
+    border-radius: 0.4em;
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: left;
+}
+
+
+/* =============================================================
+   FOOTER
+   ✏️ CHANGE: background-color, text-align
+   ============================================================= */
+.footer {
+    background-color: rgb(5, 3, 29);
+    color: white;
+    text-align: right;
+    padding: 3em 3em;
+    margin-top: 3em;
+}
